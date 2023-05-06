@@ -1,28 +1,57 @@
-# 2048 Game
+# python-2048
 
-This is a Python implementation of the popular game 2048 using the tkinter module for the graphical interface.
+This code allows the user to input text or a link and converts it into a QR code. 
 
-# Prerequisites
+First, it imports the `qrcode` module which provides functionality for generating QR codes. 
 
-Python 3.x
-tkinter
-#Usage
+Then, the user is prompted to enter the text or link that they want to convert to a QR code using the `input()` function. The input is stored in the `link` variable. 
 
-Clone this repository: git clone https://github.com/<username>/2048-game.git
-Navigate to the cloned directory: cd 2048-game
-Run the game: python main.py
-# Game Controls
+Next, a `QRCode` instance is created with some default settings, such as the error correction level, box size, and border. The data from the `link` variable is then added to the QR code instance using the `add_data()` method. 
 
-Use arrow keys to move tiles up, down, left, or right.
-Press ESC to exit the game at any time.
-# Code Explanation
+The `make()` method is called to generate the QR code, and the resulting image is stored in the `img` variable. The QR code image is created with a black fill color and gray background color. 
 
-The Board class creates the game board using a tkinter Frame widget. It initializes the board with a 4x4 grid of Label widgets, which are used to display the values of the tiles. The Board class also contains methods for compressing, merging, and randomizing the grid, as well as for painting the updated grid onto the game board.
+Finally, the image is saved as a PNG file named `qrcode.png` using the `save()` method.
 
-The Game class creates a new instance of the Board class and listens for key presses from the user. When a key is pressed, the Game class performs the appropriate move and updates the grid on the game board. It also checks for win/loss conditions and displays a message box accordingly.
+## Table of Contents
 
-# License
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Features
 
-This program was written and assisted by ChatGPT, a large language model trained by OpenAI based on the GPT-3.5 architecture.
+- Play 2048. 
+
+## Installation
+
+To install this project, follow these steps:
+1. Clone the repository to your local machine:
+```
+git clone https://github.com/devvyyxyz/python-2048
+```
+2. Navigate to the project directory:
+```
+cd python-2048
+```
+3. Set up any required configuration files or environment variables as specified in the project documentation.
+4. Run the project:
+```
+python main.py
+```
+
+
+
+## Usage
+
+- Use arrow keys to move tiles up, down, left, or right.
+- Press ESC to exit the game at any time.
+
+## Contributing
+
+Contributions are not being taken.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
