@@ -1,16 +1,24 @@
 # python-2048
 
-This code allows the user to input text or a link and converts it into a QR code. 
+This code is a Python implementation of the popular game "2048". It is a GUI-based game created using the Tkinter library. 
 
-First, it imports the `qrcode` module which provides functionality for generating QR codes. 
+The program starts by importing required libraries such as "tkinter" and "random". It then defines two dictionaries called "bg_color" and "color" which store the color codes for the background and text of the game cells. 
 
-Then, the user is prompted to enter the text or link that they want to convert to a QR code using the `input()` function. The input is stored in the `link` variable. 
+The program defines a "Board" class which initializes a 4x4 grid and sets up the game window using the Tkinter library. It also defines several methods that operate on the grid, including a "compressGrid" method which compresses the grid by removing empty cells, a "mergeGrid" method which merges adjacent cells of the same value, a "random_cell" method which adds a random cell to the grid, and a "paintGrid" method which updates the visual representation of the grid.
 
-Next, a `QRCode` instance is created with some default settings, such as the error correction level, box size, and border. The data from the `link` variable is then added to the QR code instance using the `add_data()` method. 
+The "Game" class is then defined, which initializes the game and starts the game loop. The "start" method initializes the game board by adding two random cells to the grid. It then binds the arrow keys to the "link_keys" method which handles key presses during the game. 
 
-The `make()` method is called to generate the QR code, and the resulting image is stored in the `img` variable. The QR code image is created with a black fill color and gray background color. 
+The "link_keys" method takes the pressed key as input and uses it to determine which action to take on the grid. The actions are: 
+1. Transpose the grid
+2. Compress the grid
+3. Merge adjacent cells of the same value
+4. Transpose the grid again
+5. Check if the grid has been moved
+6. Add a new random cell to the grid
+7. Check if the game has ended or the player has won
+8. Update the game board
 
-Finally, the image is saved as a PNG file named `qrcode.png` using the `save()` method.
+Overall, this program provides a basic implementation of the "2048" game.
 
 ## Table of Contents
 
