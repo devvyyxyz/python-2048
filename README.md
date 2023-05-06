@@ -27,6 +27,7 @@ Overall, this program provides a basic implementation of the "2048" game.
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Dependencies](#Dependencies)
 
 ## Features
 
@@ -49,7 +50,9 @@ cd python-2048
 python main.py
 ```
 
+# Dependencies
 
+The program requires the Tkinter GUI library to be installed, which is usually included with Python.
 
 ## Usage
 
