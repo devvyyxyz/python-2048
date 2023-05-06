@@ -24,3 +24,5 @@ The Game class creates a new instance of the Board class and listens for key pre
 # License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+This program was written and assisted by ChatGPT, a large language model trained by OpenAI based on the GPT-3.5 architecture.
