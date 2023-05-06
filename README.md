@@ -50,7 +50,7 @@ cd python-2048
 python main.py
 ```
 
-# Dependencies
+## Dependencies
 
 The program requires the Tkinter GUI library to be installed, which is usually included with Python.
 
